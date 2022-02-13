@@ -1,0 +1,28 @@
+body {
+	background-image: radial-gradient(circle, #9198e5, rgb(53, 53, 53));
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Courier New", Courier, monospace;
+}
+.cat-image {
+	display: block;
+	border-radius: 10px;
+	width: 300px;
+	height: auto;
+	border: 1px solid black;
+}
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+}
+.cat {
+	display: none;
+	border: 1px solid black;
+}
