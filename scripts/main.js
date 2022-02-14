@@ -1,13 +1,15 @@
-showCatBtn = document.getElementById("showCatBtn");
-changeCatBtn = document.getElementById("changeCatBtn");
-cat = document.getElementById("cat");
-catImage = document.getElementsByClassName("cat-image");
+const showCatBtn = document.getElementById("showCatBtn");
+const changeCatBtn = document.getElementById("changeCatBtn");
+const cat = document.getElementById("cat");
+const catImage = document.getElementsByClassName("cat-image");
 
 showCatBtn.addEventListener("click", () => {
-	if (cat.style.display == "block") {
-		cat.style.display = "none";
+	if (cat.style.visibility == "visible") {
+		cat.style.visibility = "hidden";
+		showCatBtn.textContent = "Ver un gatito 😸";
 	} else {
-		cat.style.display = "block";
+		cat.style.visibility = "visible";
+		showCatBtn.textContent = "No ver un gatito 😿";
 	}
 });
 changeCatBtn.addEventListener("click", () => {

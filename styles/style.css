@@ -23,6 +23,23 @@ body {
 	flex-flow: column;
 }
 .cat {
-	display: none;
-	border: 1px solid black;
+	display: flex;
+	visibility: hidden;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+
+	/* border: 1px solid black; */
+}
+.cat-button {
+	font-family: "Courier New", Courier, monospace;
+	background: gray;
+	color: white;
+	border: 1px none;
+	margin: 1px;
+	border-radius: 5px;
+}
+.cat-button:hover {
+	background: lightgray;
+	color: black;
 }
