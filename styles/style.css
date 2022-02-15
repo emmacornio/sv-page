@@ -2,12 +2,21 @@ body {
 	background-image: radial-gradient(circle, #9198e5, rgb(53, 53, 53));
 	background-repeat: no-repeat;
 	min-height: 100vh;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	margin: 0px;
+	box-sizing: border-box;
 }
 .header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family: "Courier New", Courier, monospace;
+	align-self: center;
 }
 .cat-image {
 	display: block;
@@ -18,18 +27,18 @@ body {
 }
 .main {
 	display: flex;
-	justify-content: center;
+	justify-content: start;
 	align-items: center;
 	flex-flow: column;
+	flex-grow: 1;
+
+	align-self: center;
 }
 .cat {
 	display: flex;
-	visibility: hidden;
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
-
-	/* border: 1px solid black; */
 }
 .cat-button {
 	font-family: "Courier New", Courier, monospace;
@@ -42,4 +51,26 @@ body {
 .cat-button:hover {
 	background: lightgray;
 	color: black;
+}
+.show {
+	visibility: visible;
+}
+.hide {
+	visibility: hidden;
+}
+.footer {
+	background-color: #9198e5;
+	height: 2rem;
+	flex: 0 0 0;
+	margin: 0px;
+	display: flex;
+
+	justify-content: center;
+	align-content: center;
+}
+a {
+	text-decoration: none;
+	color: white;
+	margin-bottom: 1rem;
+	border-top: 1rem;
 }
